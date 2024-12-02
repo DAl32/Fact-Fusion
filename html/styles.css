@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Times, serif, Arial;
+    line-height: 1.6;
+    background-color: #2A3663;
+    color: #2A3663;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B59F78;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin: 0 1rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #000261;
+}
+
+main {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #FAF6E3;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h1, .section h2 {
+    margin-bottom: 1rem;
+}
+
+.head {
+    text-align: left;
+    margin-left: 100%;
+}
+
+.text {
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.img {
+    margin-left: 50%;
+}
+
+.text-2 {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.closing {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+}
+
+textarea {
+    width: 35%;
+    height: 150px; 
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #B59F78;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav-bar ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
